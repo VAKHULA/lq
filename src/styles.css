@@ -1,0 +1,720 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url("fonts/proximanova/proxima-nova-thin.eot");
+  src: url("fonts/proximanova/proxima-nova-thin.eot?#iefix") format('embedded-opentype');
+  src: local('proxima-nova-thin');
+  src:
+    url("fonts/proximanova/proxima-nova-thin.woff2") format('woff2'),
+    url("fonts/proximanova/proxima-nova-thin.woff") format('woff'),
+    url("fonts/proximanova/proxima-nova-thin.ttf") format('truetype'),
+    url("fonts/proximanova/proxima-nova-thin.svg#youworkforthem") format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+@font-face {
+  font-family: "ProximaNovaRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url("fonts/proximanova/proxima-nova-regular.eot");
+  src: url("fonts/proximanova/proxima-nova-regular.eot?#iefix") format('embedded-opentype');
+  src: local('proxima-nova-regular');
+  src:
+    url("fonts/proximanova/proxima-nova-regular.woff2") format('woff2'),
+    url("fonts/proximanova/proxima-nova-regular.woff") format('woff'),
+    url("fonts/proximanova/proxima-nova-regular.ttf") format('truetype'),
+    url("fonts/proximanova/proxima-nova-regular.svg#youworkforthem") format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+@font-face {
+  font-family: "ProximaNovaMedium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("fonts/proximanova/proxima-nova-medium.eot");
+  src: url("fonts/proximanova/proxima-nova-medium.eot?#iefix") format('embedded-opentype');
+  src: local('proxima-nova-medium');
+  src:
+    url("fonts/proximanova/proxima-nova-medium.woff2") format("woff2"),
+    url("fonts/proximanova/proxima-nova-medium.woff") format("woff"),
+    url("fonts/proximanova/proxima-nova-medium.ttf") format("truetype"),
+    url('fonts/proximanova/proxima-nova-medium.svg#youworkforthem') format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("fonts/proximanova/proxima-nova-semibold.eot");
+  src: url("fonts/proximanova/proxima-nova-semibold.eot?#iefix") format('embedded-opentype');
+  src: local('proxima-nova-semibold');
+  src:
+    url("fonts/proximanova/proxima-nova-semibold.woff2") format('woff2'),
+    url("fonts/proximanova/proxima-nova-semibold.woff") format('woff'),
+    url("fonts/proximanova/proxima-nova-semibold.ttf") format('truetype'),
+    url("fonts/proximanova/proxima-nova-semibold.svg#youworkforthem") format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: url("fonts/proximanova/proxima-nova-bold.eot");
+  src: url("fonts/proximanova/proxima-nova-bold.eot?#iefix") format('embedded-opentype');
+  src: local('proxima-nova-bold');
+  src:
+    url("fonts/proximanova/proxima-nova-bold.woff2") format('woff2'),
+    url("fonts/proximanova/proxima-nova-bold.woff") format('woff'),
+    url("fonts/proximanova/proxima-nova-bold.ttf") format('truetype'),
+    url("fonts/proximanova/proxima-nova-bold.svg#youworkforthem") format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+@font-face {
+  font-family: "ProximaNovaThin";
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url("fonts/proximanova/proxima-nova-semibold.eot");
+  src: url("fonts/proximanova/proxima-nova-semibold.eot?#iefix") format('embedded-opentype');
+  src: local('proxima-nova-semibold');
+  src: url("fonts/proximanova/proxima-nova-semibold.woff2") format('woff2'), url("fonts/proximanova/proxima-nova-semibold.woff") format('woff'), url("fonts/proximanova/proxima-nova-semibold.ttf") format('truetype'), url("fonts/proximanova/proxima-nova-semibold.svg#youworkforthem") format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+@font-face {
+  font-family: "FuturaRoundCond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url("fonts/futura/futura-round-cond-medium.eot");
+  src: url("fonts/futura/futura-round-cond-medium.eot?#iefix") format('embedded-opentype');
+  src: local('futura-round-cond-medium');
+  src: url("fonts/futura/futura-round-cond-medium.woff2") format('woff2'), url("fonts/futura/futura-round-cond-medium.woff") format('woff'), url("fonts/futura/futura-round-cond-medium.ttf") format('truetype'), url("fonts/futura/futura-round-cond-medium.svg#youworkforthem") format('svg');
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  backface-visibility: hidden;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Simple dashboard grid CSS */
+
+/* Assign grid instructions to our parent grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #394263;
+}
+
+.main {
+  grid-area: main;
+  background-color: #f1f6fe;
+  overflow-y: auto;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 33px;
+  background-color: #648ca6;
+}
+
+.sidenav {
+  display: flex; /* Will be hidden on mobile */
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: #394263;
+}
+.sidenav__list {
+  padding: 0;
+  margin-top: 85px;
+  list-style-type: none;
+}
+.sidenav__list-item {
+  text-align: left;
+  padding: 0;
+  color: #ddd;
+}
+.sidenav__list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  height: 150px; /* Force our height since we don't have actual content yet */
+  background-color: #ddd;
+  color: slategray;
+  border-radius: 5px;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  min-height: 150px; /* Force our height since we don't have actual content yet */
+  background-color: #ddd;
+  color: #444;
+  border-radius: 5px;
+}
+.main-block.dangerous {
+  background-color: #d3d3;
+}
+.main-block__heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 1.2rem;
+}
+.main-block__updates {
+  text-align: left;
+}
+.main-overview {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(265px, 1fr)
+  ); /* Where the magic happens */
+  grid-auto-rows: 94px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.overviewcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #d3d3;
+  border-radius: 5px;
+}
+
+.main-cards {
+  column-count: 2;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'ProximaNovaLight';
+}
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  height: 485px;
+}
+.card:nth-child(2) {
+  height: 200px;
+}
+.card:nth-child(3) {
+  height: 265px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Side nav is hidden on mobile */
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100vh;
+}
+
+.sidenav {
+  display: none;
+  grid-area: sidenav;
+  background-color: #394263;
+}
+
+.main-cards {
+  column-count: 1;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+/* Non-mobile styles, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+  /* Show the sidenav */
+  .grid-container {
+    grid-template-columns: 300px 1fr; /* Show the side nav for non-mobile screens */
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+  }
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Medium-sized screen breakpoint (tablet, 1050px) */
+@media only screen and (min-width: 65.625em) {
+  /* Break out main cards into two columns */
+  .main-cards {
+    column-count: 2;
+  }
+}
+
+/* Hamburger menu icon, stays fixed on mobile for any possible scrolling */
+.menu-icon {
+  position: absolute;
+  display: flex;
+  top: 5px;
+  left: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #dadae3;
+}
+
+/* Make room for the menu icon on mobile */
+.header__search {
+  margin-left: 42px;
+}
+
+/* Mobile-first side nav styles */
+.sidenav {
+  grid-area: sidenav;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  overflow-y: scroll;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  z-index: 2; /* Needs to sit above the hamburger menu icon */
+  background-color: #394263;
+  transform: translateX(-300px);
+  transition: all 0.6s ease-in-out;
+}
+
+/* The active class is toggled on hamburger and close icon clicks */
+.sidenav.active {
+  transform: translateX(0);
+}
+
+/* Only visible on mobile screens */
+.sidenav__close-icon {
+  position: absolute;
+  visibility: visible;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* Non-mobile styles for side nav responsiveness, 750px breakpoint */
+@media only screen and (min-width: 46.875em) {
+  .sidenav {
+    position: relative; /* Fixed position on mobile */
+    transform: translateX(0);
+  }
+
+  .sidenav__close-icon {
+    visibility: hidden;
+  }
+}
+
+.accordion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 30rem;
+  overflow: hidden;
+  color: #fff;
+  font-family: "San Francisco";
+  font-weight: 400;
+}
+.accordion-list__item + .accordion-list__item {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.accordion-item--opened .accordion-item__icon {
+  transform: rotate(90deg);
+}
+.accordion-item--opened .accordion-item__inner {
+  max-height: 100rem;
+  transition-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+  transition-duration: 0.2s;
+  transition-property: max-height;
+}
+.accordion-item--opened .accordion-item__content {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-property: opacity, transform;
+}
+.accordion-item__line {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+.accordion-item__title {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 500;
+  /*color: #121212;*/
+}
+
+.accordion-item__link-icon {
+  margin-right: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: baseline;
+}
+.accordion-item__icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.6;
+  text-align: right;
+  font-size: 1.6rem;
+  transform-origin: center center;
+  line-height: 1.6rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.accordion-item__inner {
+  max-height: 0;
+  overflow: hidden;
+  text-transform: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition-duration: 0.2s;
+  transition-property: max-height;
+  z-index: 1;
+  position: relative;
+}
+.accordion-item__content {
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition-timing-function: linear, ease;
+  transition-duration: 0.1s;
+  transition-property: opacity, transform;
+  transition-delay: 0.5s;
+  padding: 0 1.2rem 1.2rem;
+}
+.accordion-item__paragraph {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.3;
+  font-family: "San Francisco";
+  font-weight: 400;
+
+}
+.accordion-item__submenu {
+  list-style: none;
+}
+
+.button {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #000;
+  font-size: 1rem;
+  padding: 0.5rem;
+  min-width: 3rem;
+  text-align: center;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.34);
+}
+.button.blue {
+  background-color: #4a89f3;
+  color: #fff;
+}
+.button.red {
+  background-color: #FF3B3B;
+  color: #fff;
+}
+.button.green {
+  background-color: #39F4A9;
+  color: #fff;
+}
+.two_columns_list {
+  list-style: none;
+  padding: 0;
+  
+}
+.two_columns_list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+.two_columns_list li > div {
+  width: 50%;
+}
+.two_columns_list li > div + div {
+  padding-left: 3rem;
+}
+
+
+
+
+
+
+input[type="checkbox"].flat-checkbox,
+input[type="radio"].flat-checkbox {
+  display: none;
+}
+input[type="checkbox"].flat-checkbox + label,
+input[type="radio"].flat-checkbox + label {
+  line-height: 20px;
+  height: 20px;
+  position: relative;
+  display: block;
+  padding-left: 40px;
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+input[type="checkbox"].flat-checkbox + label:before, input[type="checkbox"].flat-checkbox + label:after,
+input[type="radio"].flat-checkbox + label:before,
+input[type="radio"].flat-checkbox + label:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+input[type="checkbox"].flat-checkbox + label:before,
+input[type="radio"].flat-checkbox + label:before {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #444;
+}
+input[type="checkbox"].flat-checkbox + label:after,
+input[type="radio"].flat-checkbox + label:after {
+  height: 8px;
+  width: 8px;
+  background-color: transparent;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent;
+  margin-top: 6px;
+  margin-left: 6px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition: border-color 200ms linear, border-width 200ms linear;
+  -o-transition: border-color 200ms linear, border-width 200ms linear;
+  -webkit-transition: border-color 200ms linear, border-width 200ms linear;
+  transition: border-color 200ms linear, border-width 200ms linear;
+}
+input[type="checkbox"].flat-checkbox:checked + label:after,
+input[type="radio"].flat-checkbox:checked + label:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  border-color: #444;
+  -moz-transition: border-color 200ms linear, border-width 200ms linear;
+  -o-transition: border-color 200ms linear, border-width 200ms linear;
+  -webkit-transition: border-color 200ms linear, border-width 200ms linear;
+  transition: border-color 200ms linear, border-width 200ms linear;
+}
+input[type="checkbox"].flat-checkbox:disabled + label,
+input[type="radio"].flat-checkbox:disabled + label {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+input[type="checkbox"].flat-checkbox.small + label,
+input[type="radio"].flat-checkbox.small + label {
+  line-height: 16px;
+  height: 16px;
+  padding-left: 20.8px;
+}
+input[type="checkbox"].flat-checkbox.small + label:before,
+input[type="radio"].flat-checkbox.small + label:before {
+  height: 16px;
+  width: 16px;
+}
+input[type="checkbox"].flat-checkbox.small + label:after,
+input[type="radio"].flat-checkbox.small + label:after {
+  height: 8px;
+  width: 8px;
+  margin-left: 4px;
+  margin-top: 4px;
+  border-width: 4px;
+}
+input[type="checkbox"].flat-checkbox.large + label,
+input[type="radio"].flat-checkbox.large + label {
+  line-height: 24px;
+  height: 24px;
+  padding-left: 31.2px;
+}
+input[type="checkbox"].flat-checkbox.large + label:before,
+input[type="radio"].flat-checkbox.large + label:before {
+  height: 24px;
+  width: 24px;
+}
+input[type="checkbox"].flat-checkbox.large + label:after,
+input[type="radio"].flat-checkbox.large + label:after {
+  height: 12px;
+  width: 12px;
+  margin-left: 6px;
+  margin-top: 6px;
+  border-width: 6px;
+}
+
+input[type="radio"].flat-checkbox + label {
+  display: inline-block;
+}
+input[type="radio"].flat-checkbox + label:before, input[type="radio"].flat-checkbox + label:after {
+  border-radius: 100%;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag {
+  height: 2rem;
+  font-size: 1rem;
+  background-color: #4a89f3;
+  color: #fff;
+  border-radius: 1rem;
+  display: inline-block;
+  line-height: 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin: 0.4rem;
+}
+.tag i.fa-tag {
+  margin-left: -6px;
+  margin-right: 5px;
+}
+.tag i.fa-folder-open {
+  font-size: 0.8rem;
+  margin-left: -5px;
+  margin-right: 8px;
+}
+.tag i.fa-times {
+  margin-right: -5px;
+  margin-left: 8px;
+}
+.main-monoblock {
+  text-align: left;
+  margin: 20px;
+  display: flex;
+  background-color: #fff;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex-direction: column;
+}
+.main-monoblock.blue {
+  background-color: #4a89f3;
+  color: #fff;
+}
+.main-monoblock_head {
+  font-family: 'FuturaRoundCond';
+  font-size: 2rem;
+}
+.main-monoblock_subhead {
+  font-family: 'FuturaRoundCond';
+  font-size: 1rem;
+}
+.main-monoblock.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select {
+  width: 200px;
+}
+
+.react-datepicker-ignore-onclickoutside, .react-datepicker__input-container > input {
+  width: 200px;
+  background-color: hsl(0,0%,100%);
+  border-color: hsl(0,0%,80%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  min-height: 38px;
+  outline: 0 !important;
+  position: relative;
+  padding: 10px;
+  transition: all 100ms;
+  box-sizing: border-box;
+}
