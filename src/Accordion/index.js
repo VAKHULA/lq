@@ -313,7 +313,7 @@ export class Accordion extends React.Component {
           {data.map((data, key) => {
             return (
               <li {...{ className: "sidenav__list-item accordion-list__item", key }}>
-                <AccordionItem {...data} />
+                <AccordionItem handleClickHome={this.props.handleClickHome} {...data} />
               </li>
             );
           })}
@@ -327,7 +327,6 @@ class AccordionItem extends React.Component {
   state = {
     opened: false
   };
-
   render() {
     const {
       props: { title, type, icon },
@@ -369,13 +368,13 @@ class AccordionItem extends React.Component {
           return (
             <div
               {...{
-                className: `accordion-item, ${opened && "accordion-item--opened"}`,
-                onClick: () => {
-                  this.setState({ opened: !opened });
-                }
+                className: `accordion-item ${opened && "accordion-item--opened"}`,
+                
               }}
             >
-              <div {...{ className: "accordion-item__line" }}>
+              <div {...{ className: "accordion-item__line" }} onClick={() => {
+                  this.setState({ opened: !opened });
+                }}>
                 <h3 {...{ className: "accordion-item__title" }}><i className={`accordion-item__link-icon ${icon}`} />{title}</h3>
                 <i {...{ className: "accordion-item__icon fa fa-angle-right" }} />
               </div>
@@ -384,8 +383,8 @@ class AccordionItem extends React.Component {
                   <p {...{ className: "accordion-item__paragraph" }}>
                   <ul {...{ className: "accordion-item__submenu" }}>
                     {paragraph.map((item, idx) => (
-                      <li key={idx} {...{ className: "accordion-subitem__line" }}>
-                        <h3 {...{ className: "accordion-subitem__title" }}>{item.label}</h3>
+                      <li key={idx} {...{ className: "accordion-subitem__line" }} onClick={this.props.handleClickHome} >
+                        <h3 {...{ className: "accordion-subitem__title" }} >{item.label}</h3>
                         {/* <i {...{ className: "accordion-subitem__icon fa fa-chevron-right" }} /> */}
                       </li>
                       ))}
