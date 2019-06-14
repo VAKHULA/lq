@@ -79,6 +79,7 @@ a {
   margin-right: -33px;
   /* line-height: 50px; */
   cursor: pointer;
+  min-width: 110px;;
 
 }
 .header__avatar i {
@@ -506,6 +507,9 @@ a {
   flex-direction: row;
   justify-content: space-between;
   font-family: "ProximaNovaSemibold", sans-serif;
+  margin-top: 0;
+}
+div[id^="radio"] {
   margin-top: 10px;
 }
 .two_columns_list li {
@@ -607,11 +611,15 @@ input[type="checkbox"].flat-checkbox:checked + label:after,
 input[type="radio"].flat-checkbox:checked + label:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
-  border-color: #444;
+  border-color: #4a89f3;
   -moz-transition: border-color 200ms linear, border-width 200ms linear;
   -o-transition: border-color 200ms linear, border-width 200ms linear;
   -webkit-transition: border-color 200ms linear, border-width 200ms linear;
   transition: border-color 200ms linear, border-width 200ms linear;
+}
+input[type="checkbox"].flat-checkbox:checked + label:before,
+input[type="radio"].flat-checkbox:checked + label:before {
+  border-color: #4a89f3;
 }
 input[type="checkbox"].flat-checkbox:disabled + label,
 input[type="radio"].flat-checkbox:disabled + label {
@@ -701,7 +709,7 @@ input[type="radio"].flat-checkbox + label:after {
   margin: 20px;
   display: flex;
   background-color: #fff;
-  padding: 24px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 5px;
   flex-direction: column;
@@ -714,7 +722,7 @@ input[type="radio"].flat-checkbox + label:after {
 }
 .main-monoblock_head {
   font-family: "FuturaRoundCond";
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .main-monoblock_subhead {
   font-family: "ProximaNovaSemibold";
@@ -787,7 +795,8 @@ input[type="radio"].flat-checkbox + label:after {
   background-color: #fff;
   padding: 20px 0;
   font-family: "ProximaNovaSemibold";
-  font-size: 1.4rem;
+  font-size: 1rem;
+  line-height: 2rem;
   overflow-wrap: break-word;
   white-space: pre-wrap !important;
 }
@@ -842,7 +851,7 @@ input[type="radio"].flat-checkbox + label:after {
 
 .fa.abs {
   position: absolute;
-  top: 14px;
+  top: 33px;
   right: 14px;
 }
 .hint {
